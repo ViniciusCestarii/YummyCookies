@@ -16,4 +16,4 @@ Bun.serve({
   },
 });
 
-console.info(`Random cookie flavor generator is running on port ${port}!`);
+console.info(`YummyCookies is running on port ${port}!`);
