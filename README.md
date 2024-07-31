@@ -1,4 +1,4 @@
-# YummyCookies
+# YummyCookies 🍪
 
 Welcome to YummyCookies built with Bun! This API is designed to set random cookies for you to test your application.
 
