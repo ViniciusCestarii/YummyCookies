@@ -22,7 +22,7 @@ cd YummyCookies
 3. **Install Dependencies**:
 
 ```bash
-bun install
+npm install
 ```
 
 4. **Create a New Branch**:

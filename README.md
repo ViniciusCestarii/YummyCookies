@@ -7,7 +7,7 @@ Welcome to YummyCookies built with Node.js! This API is designed to set random c
 To install dependencies:
 
 ```bash
-bun install
+npm install
 ```
 
 To run:
