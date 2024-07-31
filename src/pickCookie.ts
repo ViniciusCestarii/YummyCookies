@@ -1,6 +1,6 @@
-import type { Cookie } from "./cookie";
-import { cookieFlavors } from "./cookieFlavors";
-import { getRandomBool, getRandomInt, getRandomSameSite } from "./utils";
+import { Cookie } from "./cookie.js";
+import { cookieFlavors } from "./cookieFlavors.js";
+import { getRandomBool, getRandomInt, getRandomSameSite } from "./utils.js";
 
 export const pickCookie = (existingCookies:string[]): Cookie | null => {
   const availableFlavors = cookieFlavors.filter(cookieFlavor => {

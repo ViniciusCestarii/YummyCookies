@@ -1,6 +1,6 @@
 import express from 'express'
-import { pickCookie } from './pickCookie'
 import cookieParser from 'cookie-parser'
+import { pickCookie } from './pickCookie.js';
 
 
 const app = express();
