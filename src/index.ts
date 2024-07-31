@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
   const randomFlavor = pickCookie(Object.keys(req.cookies));
 
   if (!randomFlavor) {
-    return res.status(403).send('No more cookies for you! You them all already!');
+    return res.status(403).send('No more cookies for you! You have them all already!');
   }
 
   res.cookie(randomFlavor.name, randomFlavor.options);
