@@ -1,8 +1,9 @@
 import { pickCookie } from "./pickCookie";
+import { serve } from "bun";
 
 const port = process.env.PORT ?? 3000
 
-Bun.serve({
+serve({
   port,
   fetch() {
     const randomFlavor = pickCookie();
