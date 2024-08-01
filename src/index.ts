@@ -12,7 +12,6 @@ app.use(cors({
   credentials: true,
   methods: ['GET', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
-  preflightContinue: true
 }));
 
 app.use(cookieParser());
