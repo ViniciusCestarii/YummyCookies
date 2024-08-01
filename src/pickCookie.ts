@@ -1,8 +1,8 @@
 import { Cookie } from "./cookie.js";
 import { cookieFlavors } from "./cookieFlavors.js";
-import { getRandomBool, getRandomInt, getRandomSameSite } from "./utils.js";
+import { getRandomInt } from "./utils.js";
 
-export const pickCookie = (existingCookies:string[]): Cookie | null => {
+export const pickCookie = (existingCookies: string[]): Cookie | null => {
   const availableFlavors = cookieFlavors.filter(cookieFlavor => {
     return !existingCookies.some(cookie => cookie.startsWith(cookieFlavor));
   });
@@ -15,11 +15,12 @@ export const pickCookie = (existingCookies:string[]): Cookie | null => {
 
   return {
     name: randomFlavor,
+    value: "YummyCookie",
     options: {
-      maxAge: getRandomInt(3600, 86400),
-      httpOnly: getRandomBool(),
-      secure: getRandomBool(),
-      sameSite: getRandomSameSite(),
+      maxAge: getRandomInt(10000, 100000), // 10-100 seconds
+      httpOnly: false,
+      secure: true,
+      sameSite: "strict",
     },
   };
 }
