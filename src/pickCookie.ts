@@ -20,7 +20,7 @@ export const pickCookie = (existingCookies: string[]): Cookie | null => {
       maxAge: getRandomInt(10000, 100000), // 10-100 seconds
       httpOnly: false,
       secure: true,
-      sameSite: "strict",
+      sameSite: "none",
     },
   };
 }
